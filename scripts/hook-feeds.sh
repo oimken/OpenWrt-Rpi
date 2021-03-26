@@ -25,6 +25,11 @@ svn co https://github.com/immortalwrt/packages/branches/$1/admin/netdata package
 # Add smartdns
 svn co https://github.com/immortalwrt/packages/branches/$1/net/smartdns packages/net/smartdns
 
+#Add ddns
+git clone https://github.com/ntlf9t/luci-app-dnspod.git luci/applications/luci-app-dnspod
+git clone https://github.com/chenhw2/luci-app-aliddns.git luci/applications/luci-app-aliddns
+
+
 # Add tmate
 svn co https://github.com/immortalwrt/packages/branches/$1/net/tmate packages/net/tmate
 svn co https://github.com/immortalwrt/packages/branches/openwrt-18.06/libs/msgpack-c packages/libs/msgpack-c
